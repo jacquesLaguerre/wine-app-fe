@@ -1,34 +1,24 @@
-//  import WineList from "./components/WineList";
-//  import Footer from "./components/Footer";
+import WineList from "./components/WineList";
+ import Footer from "./components/Footer";
+import Favorites from "./components/pages/Favorites";
 import Navbar from "./components/Navbar";
 import About from "./components/pages/About";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
- 
   return (
- 
-    
     <div className="App">
-      <Navbar/>
+      <Navbar />
       <BrowserRouter>
-      
-      <Routes>
-
-        <Route path="/About"  element={<About/>}/>
-
-    
-      </Routes>
-      
+        <Routes>
+          <Route path="/" element={<WineList />} />
+          <Route path="/favorites" element={<Favorites />} />
+          <Route path="/About" element={<About />} />
+        </Routes>
       </BrowserRouter>
-      {/* <WineList /> */}
-      {/* <Footer/> */}
 
-
-
- 
+      <Footer/>
     </div>
-
   );
 }
 

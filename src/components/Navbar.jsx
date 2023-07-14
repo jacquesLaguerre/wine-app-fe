@@ -12,9 +12,10 @@ function Navbar(){
 
   return(
     <header>
-      <h3>Logo</h3>
+      <h3>Wine tèt ou</h3>
       <nav ref={navRef}>
       
+        <a href="/">Home</a>
         <a href="/favorites">Favorites</a>
         <a href="/about">About Us</a>
    <button className="nav-btn nav-close-btn"   onClick={showNavbar}>

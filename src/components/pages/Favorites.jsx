@@ -1,10 +1,8 @@
 import React from 'react'
 
-function Favorites() {
+const Favorites = () => {
   return (
-<h1>
-  Favorites
-</h1>
+    <h1>Favorites</h1>
   )
 }
 
