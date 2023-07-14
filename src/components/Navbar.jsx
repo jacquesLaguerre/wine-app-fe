@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import {FaBars, FaTimes} from "react-icons/fa";
 
+
 import "./Navbar.css"
 
 function Navbar(){
@@ -16,6 +17,7 @@ function Navbar(){
       <nav ref={navRef}>
       
         <a href="/">Home</a>
+        <a href="/wine-list">Wine List</a>
         <a href="/favorites">Favorites</a>
         <a href="/about">About Us</a>
    <button className="nav-btn nav-close-btn"   onClick={showNavbar}>
@@ -30,3 +32,6 @@ function Navbar(){
 }
 
 export default Navbar;
+
+
+
