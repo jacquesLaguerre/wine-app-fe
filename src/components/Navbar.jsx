@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import {FaBars, FaTimes} from "react-icons/fa";
+import {FaBars, FaTimes, } from "react-icons/fa";
 
 
 import "./Navbar.css"
@@ -20,6 +20,14 @@ function Navbar(){
         <a href="/wine-list">Wine List</a>
         <a href="/favorites">Favorites</a>
         <a href="/about">About Us</a>
+      
+        <input
+        className ="placeholder"
+        placeholder = "Search"
+        
+        />
+     
+      
    <button className="nav-btn nav-close-btn"   onClick={showNavbar}>
    <FaTimes/>
    </button>
